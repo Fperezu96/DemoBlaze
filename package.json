@@ -1,0 +1,21 @@
+{
+  "name": "demoblaze",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:api": "npx cypress run --spec 'cypress/e2e/api/*.js' --reporter mochawesome --reporter-options 'reportDir=cypress/reports/api,reportFilename=api_test_report,overwrite=true,html=true'",
+    "test:e2e": "npx cypress run --spec 'cypress/e2e/addTwoProductsToTheCart.cy.js' --reporter mochawesome --reporter-options 'reportDir=cypress/reports/e2e,reportFilename=e2e_test_report,overwrite=true,html=true'"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cypress": "^13.12.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "chai": "^5.1.1",
+    "mochawesome": "^7.1.3"
+  }
+}

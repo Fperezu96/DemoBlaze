@@ -1,0 +1,14 @@
+En este ejercicio escogimos las opción 1 tanto para el ejercicio con las pruebas e2e y las pruenas de api. 
+
+Queremos dividir la sesión de conclusiones en varios items: 
+1) Se utilizo Cypress porque es una una herramienta robusta y eficiente que nos permite tener varias ventajas tales como: 
+
+- Rapidez y Eficiencia en la Ejecución, ya que Cypress se ejecuta directamente en el navegador y tiene acceso completo al DOM, esto contrastado con otros frameworks que pueden ser más lentos y menos integrados.
+- Al ejecutarse sobre el mismo navegador te permite feedback inmediato. 
+- Cypress soporta de forma nativa la automatización de pruebas de API. Esto significa que los desarrolladores pueden utilizar una sola herramienta para cubrir múltiples aspectos del ciclo de pruebas, lo que simplifica la gestión y reduce la necesidad de herramientas adicionales.
+- Cypress es altamente compatible con patrones de diseño de pruebas modernos, como el Page Object Model (POM). Implementar POM en Cypress es directo y organiza las pruebas de manera que el código de prueba es más limpio y mantenible. Esto permite que las pruebas se estructuren de forma modular y reutilizable, facilitando el mantenimiento y la escalabilidad de la suite de pruebas.
+- Cypress facilita la configuración y generación de reportes de pruebas. Con soporte nativo para reportes detallados y la capacidad de integrarse fácilmente con herramientas de terceros como Mochawesome
+
+2) Para la generación del archivo de instalación se utiliza directamente una extensión .md que ya se soporta en muchos IDE de desarrollo además de ser también compatible con Github
+
+3) Respecto al código como bien se menciona en el literal 1, se implementa un híbrido del POM ya que Cypress desde sus commands nos permite hacer esa abstracción por Pages y generar un código más legible. Así mismo utilizamos un utils.js para dividir la responsabilidad de clases en varias capas y no depender solo de un mero archivo. También mientras se ejecutaba la solución del mismo nos dimos cuenta de varios temas que se fueron depurando como que al elegir los dos productos podríamos tener que se repitieran entonces creamos una function para manejar ese funcionamiento, así mismo con las casuisticas donde el archivo fixtures no se genere correctamente y las pruebas de Api fallen, si bien se puede robustecer aún más. 

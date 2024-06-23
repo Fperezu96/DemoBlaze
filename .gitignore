@@ -1,0 +1,32 @@
+# Node.js
+node_modules/
+
+# Build artifacts
+dist/
+build/
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs and databases
+*.log
+*.sqlite
+
+# Environment variables
+.env
+
+# Compiled output
+*.min.js
+*.min.css
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore Cypress screenshots folder
+cypress/screenshots/

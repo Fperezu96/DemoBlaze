@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-23T06:31:01.853Z",
+    "end": "2024-06-23T06:31:12.025Z",
+    "duration": 10172,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2d4de0f0-996a-4566-aff5-3bb48c8941d4",
+      "title": "",
+      "fullFile": "cypress/e2e/addTwoProductsToTheCart.cy.js",
+      "file": "cypress/e2e/addTwoProductsToTheCart.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "98e34d7e-eadc-488c-803e-9d55a859614b",
+          "title": "DemoBlaze Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validating that I can add products to the cart, check it and finish the buying",
+              "fullTitle": "DemoBlaze Tests Validating that I can add products to the cart, check it and finish the buying",
+              "timedOut": null,
+              "duration": 7487,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visitingDemoBlazePage();\ncy.addingProductsToCart(2);\ncy.reviewingCart();\ncy.placingOrder();\ncy.checkingPurchase();",
+              "err": {},
+              "uuid": "e4343ed8-745e-484a-9cd8-a89e27ab9e17",
+              "parentUUID": "98e34d7e-eadc-488c-803e-9d55a859614b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e4343ed8-745e-484a-9cd8-a89e27ab9e17"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7487,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "e2e_test_report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/e2e",
+        "reportFilename": "e2e_test_report",
+        "overwrite": true,
+        "html": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
